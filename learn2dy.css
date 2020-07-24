@@ -1,0 +1,112 @@
+body{
+  text-align: center;
+  background-color: #e6ccff;
+}
+.above{
+  display: block;
+  float: right;
+}
+.maincenter{
+  padding-top: 130px;
+}
+button{
+  background-color:lightgrey;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 13px 17px;
+  box-shadow: 0 9px #999;
+  font-size: 25px;
+  outline: none;
+}
+button:hover{
+  background-color: #c2c2d6;
+}
+button:active{
+  transform: translateY(4px);
+  box-shadow: 0 5px #999;
+}
+h2 {
+  margin-top: 2em;
+}
+.question {
+  display: flex;
+  margin-top: 2em;
+}
+.answer-choice{
+  margin-left: auto;
+  margin-right: auto;
+}
+.answer-choice button{
+  font-size: 15px;
+}
+.answer-choice img {
+  height: 10em;
+}
+.quiz{
+  margin-left:270px;
+  margin-right: 270px;
+}
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  /*padding: 20px;*/
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}

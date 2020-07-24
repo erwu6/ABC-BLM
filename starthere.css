@@ -1,0 +1,50 @@
+body{
+  text-align: center;
+  background-color: lightgrey;
+}
+.above{
+  font-size: 30px;
+  margin-left: auto;
+  text-align: right;
+  padding: 10px 15px;
+}
+h1{
+  font-size: 70px;
+}
+.Game{
+  font-size: 50px;
+}
+.maincenter{
+  padding-top: 130px;
+}
+button{
+  background-color:#e6ccff;
+  text-decoration: none;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 17px;
+  box-shadow: 0 9px #999;
+}
+button:hover {
+  background-color: #dd99ff;
+}
+button:active{
+  transform: translateY(4px);
+  box-shadow: 0 5px #999;
+}
+h2{
+  font-size: 50px;
+}
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  padding-top: 160px;
+  color:#cc0000;
+}
+.women{
+  font-size: 40px;
+}
