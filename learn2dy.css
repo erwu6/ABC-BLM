@@ -5,19 +5,20 @@ body{
 .above{
   display: block;
   float: right;
+  outline: none;
+  border-radius: 15px;
 }
 .maincenter{
-  padding-top: 130px;
+  padding-top: 110px;
 }
 button{
   background-color:lightgrey;
-  border-radius: 15px;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
   padding: 13px 17px;
   box-shadow: 0 9px #999;
   font-size: 25px;
-  outline: none;
 }
 button:hover{
   background-color: #c2c2d6;
@@ -47,16 +48,18 @@ h2 {
   margin-left:270px;
   margin-right: 270px;
 }
+
+/* Slideshow container */
 .slideshow-container {
   position: relative;
   background: #f1f1f1f1;
+  padding:150px;
 }
 
 /* Slides */
 .mySlides {
   display: none;
-  padding: 80px;
-  text-align: center;
+  padding: 10px;
 }
 
 /* Next & previous buttons */
@@ -73,11 +76,13 @@ h2 {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
+.prev{
+  left:0;
+}
 /* Position the "next button" to the right */
 .next {
   position: absolute;
-  right: 0;
+  right:0;
   border-radius: 3px 0 0 3px;
 }
 
@@ -89,11 +94,11 @@ h2 {
 
 /* The dot/bullet/indicator container */
 .dot-container {
-  text-align: center;
-  /*padding: 20px;*/
-  background: #ddd;
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
 }
-
+* {box-sizing: border-box}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -109,4 +114,14 @@ h2 {
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
   background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+.haha{
+  margin-top:20px;
+  outline:none;
 }
