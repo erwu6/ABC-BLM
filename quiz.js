@@ -4,8 +4,6 @@
 var questionCount = 0;
 var correctAnswer = 0;
 var wrongAnswer = 0;
-var kindaAnswer = 0;
-var idkAnswer = 0;
 
 //#TODO: Use the DOM to create variables for the first quiz question.
 var q1a1 = document.getElementById("q1a1");
@@ -28,19 +26,19 @@ var result = document.getElementById("result");
 var restart= document.getElementById("restart");
 
 //#TODO: Add Event Listeners to your answer choice variables.
-q1a1.addEventListener("click", idk);
+q1a1.addEventListener("click", wrong);
 q1a2.addEventListener("click", correct);
 q1a3.addEventListener("click", wrong);
-q1a4.addEventListener("click", kinda);
+q1a4.addEventListener("click", wrong);
 
 q2a1.addEventListener("click", wrong);
-q2a2.addEventListener("click", spring);
-q2a3.addEventListener("click", fall);
-q2a4.addEventListener("click", winter);
+q2a2.addEventListener("click", correct);
+q2a3.addEventListener("click", wrong);
+q2a4.addEventListener("click", wrong);
 
 q3a1.addEventListener("click", correct);
-q3a2.addEventListener("click", kinda);
-q3a3.addEventListener("click", idk);
+q3a2.addEventListener("click", wrong);
+q3a3.addEventListener("click", wrong);
 q3a4.addEventListener("click", wrong);
 
 restart.addEventListener("click", restart);
@@ -62,34 +60,19 @@ function wrong() {
     updateResult();
   }
 }
-function kinda() {
-  kindaAnswer += 1;
-  questionCount += 1;
-//alert("Frostbite! NOO T-T");
-  if (questionCount >= 3) {
-    updateResult();
-  }
-}
-function idk() {
-  idkAnswer += 1;
-  questionCount += 1;
-  //alert("Sunburn!NOO T-T");
-  if (questionCount >= 3) {
-    updateResult();
-  }
-}
+
 function updateResult(){
-  if (correctAnswer = 3){
+  if (correctAnswer >= 3){
     result.innerHTML="You got all correct!!";
   }
-  else if(correctAnswer >= 2){
+  else if(wrongAnswer >= 3){
+    result.innerHTML="Try again";
+  }
+  else if (wrongAnswer = 1) {
     result.innerHTML="You got almost all correct!!";
   }
-  else if(correctAnswer>= 1){
+   else if(correctAnswer = 1){
     result.innerHTML="You got one correct!!";
-  }
-  else{
-    result.innerHTML="Try again";
   }
 }
 var slideIndex = 1;
